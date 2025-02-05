@@ -1,14 +1,19 @@
+// import AppRouter from "./AppRoutes/index";
+import {BrowserRouter as Router} from 'react-router-dom'
+import LoginForm from './component/LoginForm'
+import AppRouter from "./AppRoutes"
+import RegisterForm from './component/RegisterForm'
+import PostReady from './pages/PostReady'
+import { PostProvider } from './context/PostContext';
 
-import './App.css'
 
 function App() {
   
-
-  return (
-    <>
-   <h1>hello world</h1>
-       
-    </>
+   return (
+<PostProvider>
+            <AppRouter />
+        </PostProvider>
+  
   )
 }
 
