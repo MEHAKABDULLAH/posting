@@ -21,7 +21,7 @@ const LoginPage = () => {
         const errorMessage = error.message;
         console.error(errorMessage);
         window.alert("Register your Account")
-        navigate('/register')
+        navigate('/posting')
       });
   };
 
@@ -32,7 +32,7 @@ const LoginPage = () => {
           <Title level={2} style={{ textAlign: 'center', color: '#1890ff' }}>Login</Title>
           <LoginForm login={login} />
           <Paragraph style={{ textAlign: 'center' }}>
-            Don't have an account? <Link to={'/register'} style={{ color: '#1890ff' }}>Register here</Link>
+            Don't have an account? <Link to={'/posting'} style={{ color: '#1890ff' }}>Register here</Link>
           </Paragraph>
         </div>
       </Content>
