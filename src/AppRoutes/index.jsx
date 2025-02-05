@@ -1,8 +1,9 @@
 import React from 'react'
-import { BrowserRouter, Routes,Route } from 'react-router-dom'
+import {  HashRouter,BrowserRouter, Routes,Route } from 'react-router-dom'
 import LoginPage from '../pages/LoginPage'
 import RegisterPage from '../pages/RegisterPage'
 import PostReady from '../pages/PostReady'
+import Posting from './Posting';
 
 
 const AppRouter = () => {
@@ -14,6 +15,7 @@ const AppRouter = () => {
           <Route path='/' element={<LoginPage/>}/>
           <Route path='/register' element={<RegisterPage/>}/>
           <Route path='/postready' element={<PostReady/>}/>
+          <Route path="/posting" component={Posting} />
 
 
   
